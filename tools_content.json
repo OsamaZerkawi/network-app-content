@@ -7,7 +7,7 @@
   },
   {
     "name_key": "Cisco Packet Tracer Course",
-    "description_key": "Networking full course on YouTube",
+    "description_key": "Cisco course on YouTube",
     "url": "https://www.youtube.com/watch?v=JplWfxhCE18&list=PLsPzjrOLeh_x-7-Yu0Yyc4Y7uJvpNJegL",
     "icon_name": "video"
   },
@@ -33,6 +33,12 @@
     "name_key": "Nmap",
     "description_key": "Network scanner & security audit",
     "url": "https://nmap.org/",
+    "icon_name": "radar"
+  },
+  {
+    "name_key": "Networks Calc",
+    "description_key": "This Applicaiton",
+    "url": "https://t.me/NetworksCalc",
     "icon_name": "radar"
   }
  
