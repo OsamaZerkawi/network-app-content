@@ -18,12 +18,6 @@
     "icon_name": "video"
   },
   {
-    "name_key": "Subnet Calculator",
-    "description_key": "Quick IP subnet calculator",
-    "url": "https://www.calculator.net/ip-subnet-calculator.html",
-    "icon_name": "calculator"
-  },
-  {
     "name_key": "Wireshark",
     "description_key": "Network protocol analyzer",
     "url": "https://www.wireshark.org/",
@@ -36,10 +30,16 @@
     "icon_name": "radar"
   },
   {
+    "name_key": "Subnet Calculator",
+    "description_key": "Quick IP subnet calculator",
+    "url": "https://www.calculator.net/ip-subnet-calculator.html",
+    "icon_name": "calculator"
+  },
+  {
     "name_key": "Networks Calc",
     "description_key": "This Applicaiton",
     "url": "https://t.me/NetworksCalc",
-    "icon_name": "phone"
+    "icon_name": "calculator"
   }
  
 ]
