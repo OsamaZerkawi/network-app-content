@@ -1,0 +1,109 @@
+[
+  {
+    "title_key": "IP Address Classes",
+    "description_key": "Learn about Class A, B, C, D, and E IP addresses and their default subnet masks.",
+    "icon_name": "layers",
+    "points_keys": [
+      "Class A: 1.0.0.0 to 126.255.255.255",
+      "  - Default Subnet Mask: /8 (255.0.0.0)",
+      "  - For large organizations with many hosts.",
+      "Class B: 128.0.0.0 to 191.255.255.255",
+      "  - Default Subnet Mask: /16 (255.255.0.0)",
+      "  - For medium to large organizations.",
+      "Class C: 192.0.0.0 to 223.255.255.255",
+      "  - Default Subnet Mask: /24 (255.255.255.0)",
+      "  - For small organizations.",
+      "Class D: 224.0.0.0 to 239.255.255.255",
+      "  - Reserved for multicasting.",
+      "Class E: 240.0.0.0 to 255.255.255.255",
+      "  - Reserved for experimental use."
+    ]
+  },
+  {
+    "title_key": "Public vs Private IPs",
+    "description_key": "Difference between public and private addresses and how they are used.",
+    "icon_name": "globe",
+    "points_keys": [
+      "Public IP:",
+      "  - Globally unique and routable on the internet.",
+      "  - Assigned by an Internet Service Provider (ISP).",
+      "Private IP:",
+      "  - Not routable on the internet. Used for local networks.",
+      "  - Defined by RFC 1918 to conserve IPv4 addresses.",
+      "Private IP ranges:",
+      "  - Class A: 10.0.0.0 - 10.255.255.255",
+      "  - Class B: 172.16.0.0 - 172.31.255.255",
+      "  - Class C: 192.168.0.0 - 192.168.255.255",
+      "NAT (Network Address Translation)",
+      "  - Allows devices with private IPs to access the internet via a single public IP."
+    ]
+  },
+  {
+    "title_key": "OSI Model",
+    "description_key": "The 7 layers of the OSI model and their functions.",
+    "icon_name": "network",
+    "points_keys": [
+      "Layer 7: Application",
+      "  - Network process to application interface (HTTP, FTP, DNS).",
+      "Layer 6: Presentation",
+      "  - Data representation, encryption, and compression.",
+      "Layer 5: Session",
+      "  - Manages connections between applications.",
+      "Layer 4: Transport",
+      "  - End-to-end message delivery and error checking (TCP, UDP).",
+      "Layer 3: Network",
+      "  - Path determination and logical addressing (IP).",
+      "Layer 2: Data Link",
+      "  - Physical addressing (MAC) and error detection from the physical layer.",
+      "Layer 1: Physical",
+      "  - Media, signal and binary transmission (Hubs, Cables)."
+    ]
+  },
+  {
+    "title_key": "Subnetting",
+    "description_key": "The process of dividing a large network into smaller, more efficient sub-networks.",
+    "icon_name": "calculator",
+    "points_keys": [
+      "Purpose:",
+      "  - Improves network performance and security.",
+      "  - Reduces broadcast traffic and simplifies management.",
+      "How it works:",
+      "  - \"Borrows\" bits from the host portion of an address to create a subnet portion.",
+      "  - Increases the number of available networks but decreases the number of hosts per network.",
+      "Example:",
+      "  - A /24 network (e.g., 192.168.1.0) provides 254 usable hosts.",
+      "  - By borrowing 1 bit, you create two /25 subnets, each with 126 usable hosts."
+    ]
+  },
+  {
+    "title_key": "CIDR Notation",
+    "description_key": "Classless Inter-Domain Routing: A modern, flexible method for allocating IP addresses.",
+    "icon_name": "hash",
+    "points_keys": [
+      "Replaces the old classful system (Class A, B, C).",
+      "Also known as \"slash notation\" (e.g., /24).",
+      "The number after the slash indicates how many bits are used for the network portion.",
+      "Example: 192.168.1.0/24",
+      "  - Means the first 24 bits are the network address.",
+      "  - The remaining 8 bits are for host addresses.",
+      "Allows for more efficient use of the limited IPv4 address space."
+    ]
+  },
+  {
+    "title_key": "TCP vs. UDP",
+    "description_key": "A comparison of the two main transport layer protocols.",
+    "icon_name": "swapHorizontal",
+    "points_keys": [
+      "TCP (Transmission Control Protocol)",
+      "  - Connection-oriented (establishes a connection via a handshake).",
+      "  - Reliable: Guarantees message delivery and order.",
+      "  - Higher overhead due to error checking and acknowledgments.",
+      "  - Used for: Web browsing (HTTP/S), email (SMTP), file transfers (FTP).",
+      "UDP (User Datagram Protocol)",
+      "  - Connectionless (sends data without establishing a connection).",
+      "  - Unreliable: Does not guarantee delivery or order. It's a \"fire and forget\" protocol.",
+      "  - Very low overhead, making it fast.",
+      "  - Used for: Video streaming, online gaming, DNS, VoIP."
+    ]
+  }
+]
