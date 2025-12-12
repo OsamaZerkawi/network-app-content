@@ -1,3 +1,375 @@
 [
- "test":"test2"
+  {
+    "title_key": "Banner / Save / Description",
+    "icon_name": "fileText",
+    "groups": [
+      {
+        "group_title": "Banner",
+        "commands": [
+          { "cmd": "banner motd # Welcome #", "desc": "MOTD banner" }
+        ]
+      },
+      {
+        "group_title": "Interface Desc",
+        "commands": [
+          { "cmd": "interface g0/0/0", "desc": "Select interface" },
+          { "cmd": "description Connected to ITE", "desc": "Add description" },
+          { "cmd": "no shutdown", "desc": "Enable interface" }
+        ]
+      },
+      {
+        "group_title": "Save",
+        "commands": [
+          { "cmd": "copy run start", "desc": "Save config" },
+          { "cmd": "write", "desc": "Save shortcut" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Interface / IP",
+    "icon_name": "circuitBoard",
+    "groups": [
+      {
+        "group_title": "Interface",
+        "commands": [
+          { "cmd": "interface g0/0/0", "desc": "Select interface" },
+          { "cmd": "no shutdown", "desc": "Enable" },
+          {
+            "cmd": "ip address 172.16.10.2 255.255.255.0",
+            "desc": "Set IP"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "SSH Commands",
+    "icon_name": "lock",
+    "groups": [
+      {
+        "group_title": "Setup",
+        "commands": [
+          { "cmd": "hostname Damasu", "desc": "Set hostname" },
+          { "cmd": "ip domain-name ite.edu.sy", "desc": "Domain name" },
+          {
+            "cmd": "crypto key generate rsa 1024",
+            "desc": "Make RSA key"
+          },
+          { "cmd": "ip ssh version 2", "desc": "Enable SSH v2" }
+        ]
+      },
+      {
+        "group_title": "User / Login",
+        "commands": [
+          {
+            "cmd": "username student password 123456",
+            "desc": "Add user"
+          },
+          { "cmd": "line vty 0 15", "desc": "VTY lines" },
+          { "cmd": "login local", "desc": "Use local login" },
+          { "cmd": "transport input ssh", "desc": "Allow SSH only" }
+        ]
+      },
+      {
+        "group_title": "Client Example",
+        "commands": [
+          { "cmd": "ssh -l student 192.168.1.1", "desc": "SSH from PC" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Show Commands",
+    "icon_name": "search",
+    "groups": [
+      {
+        "group_title": "Basic",
+        "commands": [
+          { "cmd": "show running-config", "desc": "Show config" },
+          { "cmd": "show ip interface brief", "desc": "IP summary" },
+          { "cmd": "show vlan", "desc": "VLANs" },
+          { "cmd": "show ip route", "desc": "Routing table" }
+        ]
+      },
+      {
+        "group_title": "Interfaces",
+        "commands": [
+          { "cmd": "show interfaces fa0/1", "desc": "Interface info" },
+          { "cmd": "show interfaces trunk", "desc": "Trunk ports" }
+        ]
+      },
+      {
+        "group_title": "EtherChannel",
+        "commands": [
+          {
+            "cmd": "show etherchannel summary",
+            "desc": "Channel status"
+          }
+        ]
+      },
+      {
+        "group_title": "Security",
+        "commands": [
+          { "cmd": "show port-security", "desc": "Port-security info" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "VLAN / Ports",
+    "icon_name": "layers",
+    "groups": [
+      {
+        "group_title": "Create VLAN",
+        "commands": [
+          { "cmd": "vlan 10", "desc": "Create VLAN" },
+          { "cmd": "name IT", "desc": "VLAN name" }
+        ]
+      },
+      {
+        "group_title": "Access Ports",
+        "commands": [
+          { "cmd": "interface fa0/1", "desc": "Select port" },
+          { "cmd": "switchport mode access", "desc": "Access mode" },
+          { "cmd": "switchport access vlan 10", "desc": "Assign VLAN" }
+        ]
+      },
+      {
+        "group_title": "Range Ports",
+        "commands": [
+          { "cmd": "interface range fa0/1-18", "desc": "Port range" },
+          { "cmd": "switchport mode access", "desc": "Access mode" },
+          { "cmd": "switchport access vlan {ID}", "desc": "Assign VLAN" }
+        ]
+      },
+      {
+        "group_title": "Trunk Ports",
+        "commands": [
+          { "cmd": "interface g0/1", "desc": "Select trunk" },
+          { "cmd": "switchport mode trunk", "desc": "Trunk mode" }
+        ]
+      },
+      {
+        "group_title": "SVI",
+        "commands": [
+          { "cmd": "interface vlan 10", "desc": "Create SVI" },
+          {
+            "cmd": "ip address 192.168.1.100 255.255.255.0",
+            "desc": "SVI IP"
+          },
+          { "cmd": "no shutdown", "desc": "Enable SVI" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Inter-VLAN Routing",
+    "icon_name": "gitBranch",
+    "groups": [
+      {
+        "group_title": "Subinterfaces",
+        "commands": [
+          { "cmd": "int g0/0/0.10", "desc": "Subinterface" },
+          { "cmd": "encapsulation dot1Q 10", "desc": "VLAN tag" },
+          {
+            "cmd": "ip address 192.168.10.1 255.255.255.0",
+            "desc": "Gateway"
+          },
+          { "cmd": "no shutdown", "desc": "Enable" }
+        ]
+      },
+      {
+        "group_title": "DHCP Relay",
+        "commands": [
+          { "cmd": "ip helper-address {server-ip}", "desc": "DHCP relay" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Routing",
+    "icon_name": "radar",
+    "groups": [
+      {
+        "group_title": "Static",
+        "commands": [
+          { "cmd": "ip route X X X", "desc": "Static route" }
+        ]
+      },
+      {
+        "group_title": "RIP",
+        "commands": [
+          { "cmd": "router rip", "desc": "Enable RIP" },
+          { "cmd": "version 2", "desc": "RIP v2" },
+          { "cmd": "no auto-summary", "desc": "Disable summary" },
+          { "cmd": "network X", "desc": "Add network" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "EtherChannel (LACP)",
+    "icon_name": "link",
+    "groups": [
+      {
+        "group_title": "Prep",
+        "commands": [
+          {
+            "cmd": "interface range fa0/1-8",
+            "desc": "Select ports"
+          },
+          { "cmd": "switchport mode trunk", "desc": "Trunk mode" }
+        ]
+      },
+      {
+        "group_title": "Create LACP",
+        "commands": [
+          {
+            "cmd": "channel-group 1 mode active",
+            "desc": "LACP active"
+          }
+        ]
+      },
+      {
+        "group_title": "Port-Channel",
+        "commands": [
+          { "cmd": "interface port-channel 1", "desc": "Port-channel" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Port-Security",
+    "icon_name": "shield",
+    "groups": [
+      {
+        "group_title": "Setup",
+        "commands": [
+          { "cmd": "switchport mode access", "desc": "Access" },
+          { "cmd": "switchport port-security", "desc": "Enable" },
+          {
+            "cmd": "switchport port-security mac-address sticky",
+            "desc": "Sticky MAC"
+          },
+          {
+            "cmd": "switchport port-security maximum 1",
+            "desc": "1 MAC"
+          },
+          {
+            "cmd": "switchport port-security violation shutdown",
+            "desc": "Shutdown"
+          }
+        ]
+      },
+      {
+        "group_title": "Violations",
+        "commands": [
+          {
+            "cmd": "switchport port-security violation protect",
+            "desc": "Protect mode"
+          },
+          {
+            "cmd": "switchport port-security violation restrict",
+            "desc": "Restrict mode"
+          },
+          {
+            "cmd": "switchport port-security violation shutdown",
+            "desc": "Shutdown"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "VTP",
+    "icon_name": "network",
+    "groups": [
+      {
+        "group_title": "Server",
+        "commands": [
+          { "cmd": "vtp mode server", "desc": "VTP server mode" },
+          { "cmd": "vtp domain my-domain", "desc": "Set domain" }
+        ]
+      },
+      {
+        "group_title": "Client",
+        "commands": [
+          { "cmd": "vtp mode client", "desc": "VTP client mode" }
+        ]
+      },
+      {
+        "group_title": "Transparent",
+        "commands": [
+          { "cmd": "vtp mode transparent", "desc": "Transparent mode" }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "DHCP",
+    "icon_name": "router",
+    "groups": [
+      {
+        "group_title": "Pool",
+        "commands": [
+          { "cmd": "ip dhcp pool LAN", "desc": "Create pool" },
+          {
+            "cmd": "network 192.168.1.0 255.255.255.0",
+            "desc": "Pool network"
+          },
+          {
+            "cmd": "default-router 192.168.1.1",
+            "desc": "Default gateway"
+          },
+          { "cmd": "dns-server 8.8.8.8", "desc": "DNS" },
+          { "cmd": "exit", "desc": "Exit" }
+        ]
+      },
+      {
+        "group_title": "Exclude",
+        "commands": [
+          {
+            "cmd": "ip dhcp excluded-address 192.168.1.1 192.168.1.20",
+            "desc": "Reserve static IPs"
+          }
+        ]
+      },
+      {
+        "group_title": "Relay",
+        "commands": [
+          {
+            "cmd": "ip helper-address {server-ip}",
+            "desc": "DHCP relay"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "title_key": "Notes",
+    "icon_name": "info",
+    "groups": [
+      {
+        "group_title": "General",
+        "commands": [
+          { "cmd": "shutdown unused interfaces", "desc": "Disable unused ports" },
+          { "cmd": "SSH requires VLAN IP", "desc": "Set IP for remote access" },
+          { "cmd": "Router subinterfaces only", "desc": "No IP on main interface" },
+          { "cmd": "Reserve static IPs", "desc": "Keep IPs for server & SSH" }
+        ]
+      }
+    ]
+  }
 ]
