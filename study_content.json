@@ -90,7 +90,7 @@
     ]
   },
   {
-    "title_key": "TCP vs. UDP .",
+    "title_key": "TCP vs. UD",
     "description_key": "A comparison of the two main transport layer protocols.",
     "icon_name": "swapHorizontal",
     "points_keys": [
