@@ -1,109 +1,340 @@
 [
   {
-    "title_key": "IP Address Classes",
-    "description_key": "Learn about Class A, B, C, D, and E IP addresses and their default subnet masks.",
+    "title": {
+      "en": "IP Address Classes",
+      "ar": "فئات عناوين IP"
+    },
+    "description": {
+      "en": "Learn about Class A, B, C, D, and E IP addresses and their default subnet masks.",
+      "ar": "تعرف على فئات عناوين IP (A, B, C, D, E) وأقنعة الشبكة الفرعية الافتراضية الخاصة بها."
+    },
     "icon_name": "layers",
-    "points_keys": [
-      "Class A: 1.0.0.0 to 126.255.255.255",
-      "  - Default Subnet Mask: /8 (255.0.0.0)",
-      "  - For large organizations with many hosts.",
-      "Class B: 128.0.0.0 to 191.255.255.255",
-      "  - Default Subnet Mask: /16 (255.255.0.0)",
-      "  - For medium to large organizations.",
-      "Class C: 192.0.0.0 to 223.255.255.255",
-      "  - Default Subnet Mask: /24 (255.255.255.0)",
-      "  - For small organizations.",
-      "Class D: 224.0.0.0 to 239.255.255.255",
-      "  - Reserved for multicasting.",
-      "Class E: 240.0.0.0 to 255.255.255.255",
-      "  - Reserved for experimental use."
+    "points": [
+      {
+        "en": "Class A: 1.0.0.0 to 126.255.255.255",
+        "ar": "الفئة A: من 1.0.0.0 إلى 126.255.255.255"
+      },
+      {
+        "en": "  - Default Subnet Mask: /8 (255.0.0.0)",
+        "ar": "  - قناع الشبكة الفرعية الافتراضي: /8 (255.0.0.0)"
+      },
+      {
+        "en": "  - For large organizations with many hosts.",
+        "ar": "  - للمنظمات الكبيرة ذات عدد كبير من المضيفين."
+      },
+      {
+        "en": "Class B: 128.0.0.0 to 191.255.255.255",
+        "ar": "الفئة B: من 128.0.0.0 إلى 191.255.255.255"
+      },
+      {
+        "en": "  - Default Subnet Mask: /16 (255.255.0.0)",
+        "ar": "  - قناع الشبكة الفرعية الافتراضي: /16 (255.255.0.0)"
+      },
+      {
+        "en": "  - For medium to large organizations.",
+        "ar": "  - للمنظمات المتوسطة إلى الكبيرة."
+      },
+      {
+        "en": "Class C: 192.0.0.0 to 223.255.255.255",
+        "ar": "الفئة C: من 192.0.0.0 إلى 223.255.255.255"
+      },
+      {
+        "en": "  - Default Subnet Mask: /24 (255.255.255.0)",
+        "ar": "  - قناع الشبكة الفرعية الافتراضي: /24 (255.255.255.0)"
+      },
+      {
+        "en": "  - For small organizations.",
+        "ar": "  - للمنظمات الصغيرة."
+      },
+      {
+        "en": "Class D: 224.0.0.0 to 239.255.255.255",
+        "ar": "الفئة D: من 224.0.0.0 إلى 239.255.255.255"
+      },
+      {
+        "en": "  - Reserved for multicasting.",
+        "ar": "  - محجوز للبث المتعدد (Multicasting)."
+      },
+      {
+        "en": "Class E: 240.0.0.0 to 255.255.255.255",
+        "ar": "الفئة E: من 240.0.0.0 إلى 255.255.255.255"
+      },
+      {
+        "en": "  - Reserved for experimental use.",
+        "ar": "  - محجوز للاستخدام التجريبي."
+      }
     ]
   },
   {
-    "title_key": "Public vs Private IPs",
-    "description_key": "Difference between public and private addresses and how they are used.",
+    "title": {
+      "en": "Public vs Private IPs",
+      "ar": "العناوين العامة مقابل الخاصة"
+    },
+    "description": {
+      "en": "Difference between public and private addresses and how they are used.",
+      "ar": "الفرق بين العناوين العامة والخاصة وكيفية استخدامها."
+    },
     "icon_name": "globe",
-    "points_keys": [
-      "Public IP:",
-      "  - Globally unique and routable on the internet.",
-      "  - Assigned by an Internet Service Provider (ISP).",
-      "Private IP:",
-      "  - Not routable on the internet. Used for local networks.",
-      "  - Defined by RFC 1918 to conserve IPv4 addresses.",
-      "Private IP ranges:",
-      "  - Class A: 10.0.0.0 - 10.255.255.255",
-      "  - Class B: 172.16.0.0 - 172.31.255.255",
-      "  - Class C: 192.168.0.0 - 192.168.255.255",
-      "NAT (Network Address Translation)",
-      "  - Allows devices with private IPs to access the internet via a single public IP."
+    "points": [
+      {
+        "en": "Public IP:",
+        "ar": "IP العام:"
+      },
+      {
+        "en": "  - Globally unique and routable on the internet.",
+        "ar": "  - فريد عالمياً وقابل للتوجيه على الإنترنت."
+      },
+      {
+        "en": "  - Assigned by an Internet Service Provider (ISP).",
+        "ar": "  - يخصصه مزود خدمة الإنترنت (ISP)."
+      },
+      {
+        "en": "Private IP:",
+        "ar": "IP الخاص:"
+      },
+      {
+        "en": "  - Not routable on the internet. Used for local networks.",
+        "ar": "  - غير قابل للتوجيه على الإنترنت. يستخدم للشبكات المحلية."
+      },
+      {
+        "en": "  - Defined by RFC 1918 to conserve IPv4 addresses.",
+        "ar": "  - معرّف في RFC 1918 للحفاظ على عناوين IPv4."
+      },
+      {
+        "en": "Private IP ranges:",
+        "ar": "نطاقات ال IP الخاصة:"
+      },
+      {
+        "en": "  - Class A: 10.0.0.0 - 10.255.255.255",
+        "ar": "  - الفئة A: من 10.0.0.0 إلى 10.255.255.255"
+      },
+      {
+        "en": "  - Class B: 172.16.0.0 - 172.31.255.255",
+        "ar": "  - الفئة B: من 172.16.0.0 إلى 172.31.255.255"
+      },
+      {
+        "en": "  - Class C: 192.168.0.0 - 192.168.255.255",
+        "ar": "  - الفئة C: من 192.168.0.0 إلى 192.168.255.255"
+      },
+      {
+        "en": "NAT (Network Address Translation)",
+        "ar": "NAT (ترجمة عناوين الشبكة)"
+      },
+      {
+        "en": "  - Allows devices with private IPs to access the internet via a single public IP.",
+        "ar": "  - يسمح للأجهزة ذات عناوين IP الخاصة بالوصول إلى الإنترنت عبر عنوان IP عام واحد."
+      }
     ]
   },
   {
-    "title_key": "OSI Model",
-    "description_key": "The 7 layers of the OSI model and their functions.",
+    "title": {
+      "en": "OSI Model",
+      "ar": "نموذج OSI"
+    },
+    "description": {
+      "en": "The 7 layers of the OSI model and their functions.",
+      "ar": "الطبقات السبع لنموذج OSI ووظائفها."
+    },
     "icon_name": "network",
-    "points_keys": [
-      "Layer 7: Application",
-      "  - Network process to application interface (HTTP, FTP, DNS).",
-      "Layer 6: Presentation",
-      "  - Data representation, encryption, and compression.",
-      "Layer 5: Session",
-      "  - Manages connections between applications.",
-      "Layer 4: Transport",
-      "  - End-to-end message delivery and error checking (TCP, UDP).",
-      "Layer 3: Network",
-      "  - Path determination and logical addressing (IP).",
-      "Layer 2: Data Link",
-      "  - Physical addressing (MAC) and error detection from the physical layer.",
-      "Layer 1: Physical",
-      "  - Media, signal and binary transmission (Hubs, Cables)."
+    "points": [
+      {
+        "en": "Layer 7: Application",
+        "ar": "الطبقة 7: التطبيق"
+      },
+      {
+        "en": "  - Network process to application interface (HTTP, FTP, DNS).",
+        "ar": "  - واجهة بين عملية الشبكة والتطبيق (HTTP, FTP, DNS)."
+      },
+      {
+        "en": "Layer 6: Presentation",
+        "ar": "الطبقة 6: العرض"
+      },
+      {
+        "en": "  - Data representation, encryption, and compression.",
+        "ar": "  - تمثيل البيانات والتشفير والضغط."
+      },
+      {
+        "en": "Layer 5: Session",
+        "ar": "الطبقة 5: الجلسة"
+      },
+      {
+        "en": "  - Manages connections between applications.",
+        "ar": "  - تدير الاتصالات بين التطبيقات."
+      },
+      {
+        "en": "Layer 4: Transport",
+        "ar": "الطبقة 4: النقل"
+      },
+      {
+        "en": "  - End-to-end message delivery and error checking (TCP, UDP).",
+        "ar": "  - تسليم الرسائل من طرف إلى طرف وفحص الأخطاء (TCP, UDP)."
+      },
+      {
+        "en": "Layer 3: Network",
+        "ar": "الطبقة 3: الشبكة"
+      },
+      {
+        "en": "  - Path determination and logical addressing (IP).",
+        "ar": "  - تحديد المسار والعنونة المنطقية (IP)."
+      },
+      {
+        "en": "Layer 2: Data Link",
+        "ar": "الطبقة 2: ربط البيانات"
+      },
+      {
+        "en": "  - Physical addressing (MAC) and error detection from the physical layer.",
+        "ar": "  - العنونة الفيزيائية (MAC) واكتشاف الأخطاء من الطبقة الفيزيائية."
+      },
+      {
+        "en": "Layer 1: Physical",
+        "ar": "الطبقة 1: الفيزيائية"
+      },
+      {
+        "en": "  - Media, signal and binary transmission (Hubs, Cables).",
+        "ar": "  - الوسائط والإشارة والإرسال الثنائي (الموزعات، الكابلات)."
+      }
     ]
   },
   {
-    "title_key": "Subnetting",
-    "description_key": "The process of dividing a large network into smaller, more efficient sub-networks.",
+    "title": {
+      "en": "Subnetting",
+      "ar": "التقسيم الشبكي (Subnetting)"
+    },
+    "description": {
+      "en": "The process of dividing a large network into smaller, more efficient sub-networks.",
+      "ar": "عملية تقسيم شبكة كبيرة إلى شبكات فرعية أصغر وأكثر كفاءة."
+    },
     "icon_name": "calculator",
-    "points_keys": [
-      "Purpose:",
-      "  - Improves network performance and security.",
-      "  - Reduces broadcast traffic and simplifies management.",
-      "How it works:",
-      "  - \"Borrows\" bits from the host portion of an address to create a subnet portion.",
-      "  - Increases the number of available networks but decreases the number of hosts per network.",
-      "Example:",
-      "  - A /24 network (e.g., 192.168.1.0) provides 254 usable hosts.",
-      "  - By borrowing 1 bit, you create two /25 subnets, each with 126 usable hosts."
+    "points": [
+      {
+        "en": "Purpose:",
+        "ar": "الغرض:"
+      },
+      {
+        "en": "  - Improves network performance and security.",
+        "ar": "  - يحسن أداء الشبكة وأمانها."
+      },
+      {
+        "en": "  - Reduces broadcast traffic and simplifies management.",
+        "ar": "  - يقلل من حركة مرور البث ويبسط الإدارة."
+      },
+      {
+        "en": "How it works:",
+        "ar": "كيف يعمل:"
+      },
+      {
+        "en": "  - \"Borrows\" bits from the host portion of an address to create a subnet portion.",
+        "ar": "  - \"يستعير\" بتات من جزء المضيف في العنوان لإنشاء جزء الشبكة الفرعية."
+      },
+      {
+        "en": "  - Increases the number of available networks but decreases the number of hosts per network.",
+        "ar": "  - يزيد عدد الشبكات المتاحة ولكنه يقلل عدد المضيفين في كل شبكة."
+      },
+      {
+        "en": "Example:",
+        "ar": "مثال:"
+      },
+      {
+        "en": "  - A /24 network (e.g., 192.168.1.0) provides 254 usable hosts.",
+        "ar": "  - شبكة /24 (مثلاً 192.168.1.0) توفر 254 مضيفًا صالحًا للاستخدام."
+      },
+      {
+        "en": "  - By borrowing 1 bit, you create two /25 subnets, each with 126 usable hosts.",
+        "ar": "  - عن طريق استعارة بت واحد، تنشئ شبكتين فرعيتين /25، كل منها بها 126 مضيفًا صالحًا للاستخدام."
+      }
     ]
   },
   {
-    "title_key": "CIDR Notation",
-    "description_key": "Classless Inter-Domain Routing: A modern, flexible method for allocating IP addresses.",
+    "title": {
+      "en": "CIDR Notation",
+      "ar": "تدوين CIDR"
+    },
+    "description": {
+      "en": "Classless Inter-Domain Routing: A modern, flexible method for allocating IP addresses.",
+      "ar": "التوجيه بين النطاقات عديم الفئة: طريقة حديثة ومرنة لتخصيص عناوين IP."
+    },
     "icon_name": "hash",
-    "points_keys": [
-      "Replaces the old classful system (Class A, B, C).",
-      "Also known as \"slash notation\" (e.g., /24).",
-      "The number after the slash indicates how many bits are used for the network portion.",
-      "Example: 192.168.1.0/24",
-      "  - Means the first 24 bits are the network address.",
-      "  - The remaining 8 bits are for host addresses.",
-      "Allows for more efficient use of the limited IPv4 address space."
+    "points": [
+      {
+        "en": "Replaces the old classful system (Class A, B, C).",
+        "ar": "يحل محل النظام القديم القائم على الفئات (Class A, B, C)."
+      },
+      {
+        "en": "Also known as \"slash notation\" (e.g., /24).",
+        "ar": "يُعرف أيضًا بـ \"تدوين الشرطة\" (مثلاً /24)."
+      },
+      {
+        "en": "The number after the slash indicates how many bits are used for the network portion.",
+        "ar": "الرقم بعد الشرطة يعدد البتات المستخدمة لجزء الشبكة."
+      },
+      {
+        "en": "Example: 192.168.1.0/24",
+        "ar": "مثال: 192.168.1.0/24"
+      },
+      {
+        "en": "  - Means the first 24 bits are the network address.",
+        "ar": "  - يعني أن الـ 24 بت الأولى هي عنوان الشبكة."
+      },
+      {
+        "en": "  - The remaining 8 bits are for host addresses.",
+        "ar": "  - الـ 8 بت المتبقية لعناوين المضيفين."
+      },
+      {
+        "en": "Allows for more efficient use of the limited IPv4 address space.",
+        "ar": "يسمح باستخدام أكثر كفاءة لمساحة عناوين IPv4 المحدودة."
+      }
     ]
   },
   {
-    "title_key": "TCP vs. UDP",
-    "description_key": "A comparison of the two main transport layer protocols.",
+    "title": {
+      "en": "TCP vs. UDP",
+      "ar": "مقارنة TCP و UDP"
+    },
+    "description": {
+      "en": "A comparison of the two main transport layer protocols.",
+      "ar": "مقارنة بين بروتوكولي طبقة النقل الرئيسيين."
+    },
     "icon_name": "swapHorizontal",
-    "points_keys": [
-      "TCP (Transmission Control Protocol)",
-      "  - Connection-oriented (establishes a connection via a handshake).",
-      "  - Reliable: Guarantees message delivery and order.",
-      "  - Higher overhead due to error checking and acknowledgments.",
-      "  - Used for: Web browsing (HTTP/S), email (SMTP), file transfers (FTP).",
-      "UDP (User Datagram Protocol)",
-      "  - Connectionless (sends data without establishing a connection).",
-      "  - Unreliable: Does not guarantee delivery or order. It's a \"fire and forget\" protocol.",
-      "  - Very low overhead, making it fast.",
-      "  - Used for: Video streaming, online gaming, DNS, VoIP."
+    "points": [
+      {
+        "en": "TCP (Transmission Control Protocol)",
+        "ar": "TCP (بروتوكول التحكم في الإرسال)"
+      },
+      {
+        "en": "  - Connection-oriented (establishes a connection via a handshake).",
+        "ar": "  - موجّه نحو الاتصال (يقوم بإنشاء اتصال عبر مصافحة)."
+      },
+      {
+        "en": "  - Reliable: Guarantees message delivery and order.",
+        "ar": "  - موثوق: يضمن تسليم الرسائل وترتيبها."
+      },
+      {
+        "en": "  - Higher overhead due to error checking and acknowledgments.",
+        "ar": "  - عبء إضافي أعلى بسبب فحص الأخطاء والإقرارات بالاستلام."
+      },
+      {
+        "en": "  - Used for: Web browsing (HTTP/S), email (SMTP), file transfers (FTP).",
+        "ar": "  - يستخدم لـ: تصفح الويب (HTTP/S)، البريد الإلكتروني (SMTP)، نقل الملفات (FTP)."
+      },
+      {
+        "en": "UDP (User Datagram Protocol)",
+        "ar": "UDP (بروتوكول بيانات المستخدم)"
+      },
+      {
+        "en": "  - Connectionless (sends data without establishing a connection).",
+        "ar": "  - بدون اتصال (يرسل البيانات بدون إنشاء اتصال)."
+      },
+      {
+        "en": "  - Unreliable: Does not guarantee delivery or order. It's a \"fire and forget\" protocol.",
+        "ar": "  - غير موثوق: لا يضمن التسليم أو الترتيب. هو بروتوكول \"أطلق وانسَ\"."
+      },
+      {
+        "en": "  - Very low overhead, making it fast.",
+        "ar": "  - عبء إضافي منخفض جدًا، مما يجعله سريعًا."
+      },
+      {
+        "en": "  - Used for: Video streaming, online gaming, DNS, VoIP.",
+        "ar": "  - يستخدم لـ: بث الفيديو، الألعاب عبر الإنترنت، DNS، صوت عبر بروتوكول الإنترنت (VoIP)."
+      }
     ]
   }
 ]

@@ -1,373 +1,896 @@
 [
   {
-    "title_key": "Banner / Save / Description",
+    "title": {
+      "en": "Banner / Save / Description",
+      "ar": "البنر / الحفظ / الوصف"
+    },
     "icon_name": "fileText",
     "groups": [
       {
-        "group_title": "Banner",
+        "group_title": {
+          "en": "Banner",
+          "ar": "البنر"
+        },
         "commands": [
-          { "cmd": "banner motd # Welcome #", "desc": "MOTD banner" }
+          {
+            "cmd": "banner motd # Welcome #",
+            "desc": {
+              "en": "MOTD banner",
+              "ar": "بنر رسالة اليوم"
+            }
+          }
         ]
       },
       {
-        "group_title": "Interface Desc",
+        "group_title": {
+          "en": "Interface Desc",
+          "ar": "وصف الواجهة"
+        },
         "commands": [
-          { "cmd": "interface g0/0/0", "desc": "Select interface" },
-          { "cmd": "description Connected to ITE", "desc": "Add description" },
-          { "cmd": "no shutdown", "desc": "Enable interface" }
+          {
+            "cmd": "interface g0/0/0",
+            "desc": {
+              "en": "Select interface",
+              "ar": "اختيار الواجهة"
+            }
+          },
+          {
+            "cmd": "description Connected to ITE",
+            "desc": {
+              "en": "Add description",
+              "ar": "إضافة وصف"
+            }
+          },
+          {
+            "cmd": "no shutdown",
+            "desc": {
+              "en": "Enable interface",
+              "ar": "تمكين الواجهة"
+            }
+          }
         ]
       },
       {
-        "group_title": "Save",
+        "group_title": {
+          "en": "Save",
+          "ar": "الحفظ"
+        },
         "commands": [
-          { "cmd": "copy run start", "desc": "Save config" },
-          { "cmd": "write", "desc": "Save shortcut" }
+          {
+            "cmd": "copy run start",
+            "desc": {
+              "en": "Save config",
+              "ar": "حفظ الإعدادات"
+            }
+          },
+          {
+            "cmd": "write",
+            "desc": {
+              "en": "Save shortcut",
+              "ar": "اختصار الحفظ"
+            }
+          }
         ]
       }
     ]
   },
-
   {
-    "title_key": "Interface / IP",
+    "title": {
+      "en": "Interface / IP",
+      "ar": "الواجهة / العنوان"
+    },
     "icon_name": "circuitBoard",
     "groups": [
       {
-        "group_title": "Interface",
+        "group_title": {
+          "en": "Interface",
+          "ar": "الواجهة"
+        },
         "commands": [
-          { "cmd": "interface g0/0/0", "desc": "Select interface" },
-          { "cmd": "no shutdown", "desc": "Enable" },
+          {
+            "cmd": "interface g0/0/0",
+            "desc": {
+              "en": "Select interface",
+              "ar": "اختيار الواجهة"
+            }
+          },
+          {
+            "cmd": "no shutdown",
+            "desc": {
+              "en": "Enable",
+              "ar": "تفعيل"
+            }
+          },
           {
             "cmd": "ip address 172.16.10.2 255.255.255.0",
-            "desc": "Set IP"
+            "desc": {
+              "en": "Set IP",
+              "ar": "تعيين عنوان IP"
+            }
           }
         ]
       }
     ]
   },
-
   {
-    "title_key": "SSH Commands",
+    "title": {
+      "en": "SSH Commands",
+      "ar": "أوامر SSH"
+    },
     "icon_name": "lock",
     "groups": [
       {
-        "group_title": "Setup",
+        "group_title": {
+          "en": "Setup",
+          "ar": "الإعداد"
+        },
         "commands": [
-          { "cmd": "hostname Damasu", "desc": "Set hostname" },
-          { "cmd": "ip domain-name ite.edu.sy", "desc": "Domain name" },
+          {
+            "cmd": "hostname Damasu",
+            "desc": {
+              "en": "Set hostname",
+              "ar": "تعيين اسم الجهاز"
+            }
+          },
+          {
+            "cmd": "ip domain-name ite.edu.sy",
+            "desc": {
+              "en": "Domain name",
+              "ar": "تعيين اسم النطاق"
+            }
+          },
           {
             "cmd": "crypto key generate rsa 1024",
-            "desc": "Make RSA key"
+            "desc": {
+              "en": "Make RSA key",
+              "ar": "إنشاء مفتاح RSA"
+            }
           },
-          { "cmd": "ip ssh version 2", "desc": "Enable SSH v2" }
+          {
+            "cmd": "ip ssh version 2",
+            "desc": {
+              "en": "Enable SSH v2",
+              "ar": "تفعيل SSH الإصدار 2"
+            }
+          }
         ]
       },
       {
-        "group_title": "User / Login",
+        "group_title": {
+          "en": "User / Login",
+          "ar": "المستخدم / تسجيل الدخول"
+        },
         "commands": [
           {
             "cmd": "username student password 123456",
-            "desc": "Add user"
+            "desc": {
+              "en": "Add user",
+              "ar": "إضافة مستخدم"
+            }
           },
-          { "cmd": "line vty 0 15", "desc": "VTY lines" },
-          { "cmd": "login local", "desc": "Use local login" },
-          { "cmd": "transport input ssh", "desc": "Allow SSH only" }
+          {
+            "cmd": "line vty 0 15",
+            "desc": {
+              "en": "VTY lines",
+              "ar": "خطوط VTY"
+            }
+          },
+          {
+            "cmd": "login local",
+            "desc": {
+              "en": "Use local login",
+              "ar": "تسجيل دخول محلي"
+            }
+          },
+          {
+            "cmd": "transport input ssh",
+            "desc": {
+              "en": "Allow SSH only",
+              "ar": "السماح باتصال SSH فقط"
+            }
+          }
         ]
       },
       {
-        "group_title": "Client Example",
+        "group_title": {
+          "en": "Client Example",
+          "ar": "مثال من الحاسوب"
+        },
         "commands": [
-          { "cmd": "ssh -l student 192.168.1.1", "desc": "SSH from PC" }
+          {
+            "cmd": "ssh -l student 192.168.1.1",
+            "desc": {
+              "en": "SSH from PC",
+              "ar": "اتصال SSH من الحاسوب"
+            }
+          }
         ]
       }
     ]
   },
-
   {
-    "title_key": "Show Commands",
+    "title": {
+      "en": "Show Commands",
+      "ar": "أوامر العرض"
+    },
     "icon_name": "search",
     "groups": [
       {
-        "group_title": "Basic",
+        "group_title": {
+          "en": "Basic",
+          "ar": "أساسي"
+        },
         "commands": [
-          { "cmd": "show running-config", "desc": "Show config" },
-          { "cmd": "show ip interface brief", "desc": "IP summary" },
-          { "cmd": "show vlan", "desc": "VLANs" },
-          { "cmd": "show ip route", "desc": "Routing table" }
+          {
+            "cmd": "show running-config",
+            "desc": {
+              "en": "Show config",
+              "ar": "عرض الإعدادات"
+            }
+          },
+          {
+            "cmd": "show ip interface brief",
+            "desc": {
+              "en": "IP summary",
+              "ar": "ملخص عناوين IP"
+            }
+          },
+          {
+            "cmd": "show vlan",
+            "desc": {
+              "en": "VLANs",
+              "ar": "عرض الـ VLANs"
+            }
+          },
+          {
+            "cmd": "show ip route",
+            "desc": {
+              "en": "Routing table",
+              "ar": "جدول التوجيه"
+            }
+          }
         ]
       },
       {
-        "group_title": "Interfaces",
+        "group_title": {
+          "en": "Interfaces",
+          "ar": "الواجهات"
+        },
         "commands": [
-          { "cmd": "show interfaces fa0/1", "desc": "Interface info" },
-          { "cmd": "show interfaces trunk", "desc": "Trunk ports" }
+          {
+            "cmd": "show interfaces fa0/1",
+            "desc": {
+              "en": "Interface info",
+              "ar": "معلومات الواجهة"
+            }
+          },
+          {
+            "cmd": "show interfaces trunk",
+            "desc": {
+              "en": "Trunk ports",
+              "ar": "منافذ الترنك"
+            }
+          }
         ]
       },
       {
-        "group_title": "EtherChannel",
+        "group_title": {
+          "en": "EtherChannel",
+          "ar": "الإيثر تشانيل"
+        },
         "commands": [
           {
             "cmd": "show etherchannel summary",
-            "desc": "Channel status"
+            "desc": {
+              "en": "Channel status",
+              "ar": "حالة الإيثر تشانيل"
+            }
           }
         ]
       },
       {
-        "group_title": "Security",
+        "group_title": {
+          "en": "Security",
+          "ar": "الأمان"
+        },
         "commands": [
-          { "cmd": "show port-security", "desc": "Port-security info" }
+          {
+            "cmd": "show port-security",
+            "desc": {
+              "en": "Port-security info",
+              "ar": "معلومات Port-Security"
+            }
+          }
         ]
       }
     ]
   },
-
   {
-    "title_key": "VLAN / Ports",
+    "title": {
+      "en": "VLAN / Ports",
+      "ar": "VLAN / المنافذ"
+    },
     "icon_name": "layers",
     "groups": [
       {
-        "group_title": "Create VLAN",
+        "group_title": {
+          "en": "Create VLAN",
+          "ar": "إنشاء VLAN"
+        },
         "commands": [
-          { "cmd": "vlan 10", "desc": "Create VLAN" },
-          { "cmd": "name IT", "desc": "VLAN name" }
+          {
+            "cmd": "vlan 10",
+            "desc": {
+              "en": "Create VLAN",
+              "ar": "إنشاء VLAN"
+            }
+          },
+          {
+            "cmd": "name IT",
+            "desc": {
+              "en": "VLAN name",
+              "ar": "تعيين اسم VLAN"
+            }
+          }
         ]
       },
       {
-        "group_title": "Access Ports",
+        "group_title": {
+          "en": "Access Ports",
+          "ar": "منافذ Access"
+        },
         "commands": [
-          { "cmd": "interface fa0/1", "desc": "Select port" },
-          { "cmd": "switchport mode access", "desc": "Access mode" },
-          { "cmd": "switchport access vlan 10", "desc": "Assign VLAN" }
+          {
+            "cmd": "interface fa0/1",
+            "desc": {
+              "en": "Select port",
+              "ar": "اختيار المنفذ"
+            }
+          },
+          {
+            "cmd": "switchport mode access",
+            "desc": {
+              "en": "Access mode",
+              "ar": "وضع Access"
+            }
+          },
+          {
+            "cmd": "switchport access vlan 10",
+            "desc": {
+              "en": "Assign VLAN",
+              "ar": "إسناد VLAN"
+            }
+          }
         ]
       },
       {
-        "group_title": "Range Ports",
+        "group_title": {
+          "en": "Range Ports",
+          "ar": "نطاق المنافذ"
+        },
         "commands": [
-          { "cmd": "interface range fa0/1-18", "desc": "Port range" },
-          { "cmd": "switchport mode access", "desc": "Access mode" },
-          { "cmd": "switchport access vlan {ID}", "desc": "Assign VLAN" }
+          {
+            "cmd": "interface range fa0/1-18",
+            "desc": {
+              "en": "Port range",
+              "ar": "نطاق المنافذ"
+            }
+          },
+          {
+            "cmd": "switchport mode access",
+            "desc": {
+              "en": "Access mode",
+              "ar": "وضع Access"
+            }
+          },
+          {
+            "cmd": "switchport access vlan {ID}",
+            "desc": {
+              "en": "Assign VLAN",
+              "ar": "إسناد VLAN"
+            }
+          }
         ]
       },
       {
-        "group_title": "Trunk Ports",
+        "group_title": {
+          "en": "Trunk Ports",
+          "ar": "منافذ Trunk"
+        },
         "commands": [
-          { "cmd": "interface g0/1", "desc": "Select trunk" },
-          { "cmd": "switchport mode trunk", "desc": "Trunk mode" }
+          {
+            "cmd": "interface g0/1",
+            "desc": {
+              "en": "Select trunk",
+              "ar": "اختيار منفذ Trunk"
+            }
+          },
+          {
+            "cmd": "switchport mode trunk",
+            "desc": {
+              "en": "Trunk mode",
+              "ar": "وضع Trunk"
+            }
+          }
         ]
       },
       {
-        "group_title": "SVI",
+        "group_title": {
+          "en": "SVI",
+          "ar": "SVI"
+        },
         "commands": [
-          { "cmd": "interface vlan 10", "desc": "Create SVI" },
+          {
+            "cmd": "interface vlan 10",
+            "desc": {
+              "en": "Create SVI",
+              "ar": "إنشاء SVI"
+            }
+          },
           {
             "cmd": "ip address 192.168.1.100 255.255.255.0",
-            "desc": "SVI IP"
+            "desc": {
+              "en": "SVI IP",
+              "ar": "عنوان IP لـ SVI"
+            }
           },
-          { "cmd": "no shutdown", "desc": "Enable SVI" }
+          {
+            "cmd": "no shutdown",
+            "desc": {
+              "en": "Enable SVI",
+              "ar": "تفعيل SVI"
+            }
+          }
         ]
       }
     ]
   },
-
   {
-    "title_key": "Inter-VLAN Routing",
+    "title": {
+      "en": "Inter-VLAN Routing",
+      "ar": "توجيه بين الـ VLANs"
+    },
     "icon_name": "gitBranch",
     "groups": [
       {
-        "group_title": "Subinterfaces",
+        "group_title": {
+          "en": "Subinterfaces",
+          "ar": "الواجهات الفرعية"
+        },
         "commands": [
-          { "cmd": "int g0/0/0.10", "desc": "Subinterface" },
-          { "cmd": "encapsulation dot1Q 10", "desc": "VLAN tag" },
+          {
+            "cmd": "int g0/0/0.10",
+            "desc": {
+              "en": "Subinterface",
+              "ar": "واجهة فرعية"
+            }
+          },
+          {
+            "cmd": "encapsulation dot1Q 10",
+            "desc": {
+              "en": "VLAN tag",
+              "ar": "علامة VLAN"
+            }
+          },
           {
             "cmd": "ip address 192.168.10.1 255.255.255.0",
-            "desc": "Gateway"
+            "desc": {
+              "en": "Gateway",
+              "ar": "البوابة الافتراضية"
+            }
           },
-          { "cmd": "no shutdown", "desc": "Enable" }
-        ]
-      },
-      {
-        "group_title": "DHCP Relay",
-        "commands": [
-          { "cmd": "ip helper-address {server-ip}", "desc": "DHCP relay" }
-        ]
-      }
-    ]
-  },
-
-  {
-    "title_key": "Routing",
-    "icon_name": "radar",
-    "groups": [
-      {
-        "group_title": "Static",
-        "commands": [
-          { "cmd": "ip route X X X", "desc": "Static route" }
-        ]
-      },
-      {
-        "group_title": "RIP",
-        "commands": [
-          { "cmd": "router rip", "desc": "Enable RIP" },
-          { "cmd": "version 2", "desc": "RIP v2" },
-          { "cmd": "no auto-summary", "desc": "Disable summary" },
-          { "cmd": "network X", "desc": "Add network" }
-        ]
-      }
-    ]
-  },
-
-  {
-    "title_key": "EtherChannel (LACP)",
-    "icon_name": "link",
-    "groups": [
-      {
-        "group_title": "Prep",
-        "commands": [
           {
-            "cmd": "interface range fa0/1-8",
-            "desc": "Select ports"
-          },
-          { "cmd": "switchport mode trunk", "desc": "Trunk mode" }
-        ]
-      },
-      {
-        "group_title": "Create LACP",
-        "commands": [
-          {
-            "cmd": "channel-group 1 mode active",
-            "desc": "LACP active"
+            "cmd": "no shutdown",
+            "desc": {
+              "en": "Enable",
+              "ar": "تفعيل"
+            }
           }
         ]
       },
       {
-        "group_title": "Port-Channel",
-        "commands": [
-          { "cmd": "interface port-channel 1", "desc": "Port-channel" }
-        ]
-      }
-    ]
-  },
-
-  {
-    "title_key": "Port-Security",
-    "icon_name": "shield",
-    "groups": [
-      {
-        "group_title": "Setup",
-        "commands": [
-          { "cmd": "switchport mode access", "desc": "Access" },
-          { "cmd": "switchport port-security", "desc": "Enable" },
-          {
-            "cmd": "switchport port-security mac-address sticky",
-            "desc": "Sticky MAC"
-          },
-          {
-            "cmd": "switchport port-security maximum 1",
-            "desc": "1 MAC"
-          },
-          {
-            "cmd": "switchport port-security violation shutdown",
-            "desc": "Shutdown"
-          }
-        ]
-      },
-      {
-        "group_title": "Violations",
-        "commands": [
-          {
-            "cmd": "switchport port-security violation protect",
-            "desc": "Protect mode"
-          },
-          {
-            "cmd": "switchport port-security violation restrict",
-            "desc": "Restrict mode"
-          },
-          {
-            "cmd": "switchport port-security violation shutdown",
-            "desc": "Shutdown"
-          }
-        ]
-      }
-    ]
-  },
-
-  {
-    "title_key": "VTP",
-    "icon_name": "network",
-    "groups": [
-      {
-        "group_title": "Server",
-        "commands": [
-          { "cmd": "vtp mode server", "desc": "VTP server mode" },
-          { "cmd": "vtp domain my-domain", "desc": "Set domain" }
-        ]
-      },
-      {
-        "group_title": "Client",
-        "commands": [
-          { "cmd": "vtp mode client", "desc": "VTP client mode" }
-        ]
-      },
-      {
-        "group_title": "Transparent",
-        "commands": [
-          { "cmd": "vtp mode transparent", "desc": "Transparent mode" }
-        ]
-      }
-    ]
-  },
-
-  {
-    "title_key": "DHCP",
-    "icon_name": "router",
-    "groups": [
-      {
-        "group_title": "Pool",
-        "commands": [
-          { "cmd": "ip dhcp pool LAN", "desc": "Create pool" },
-          {
-            "cmd": "network 192.168.1.0 255.255.255.0",
-            "desc": "Pool network"
-          },
-          {
-            "cmd": "default-router 192.168.1.1",
-            "desc": "Default gateway"
-          },
-          { "cmd": "dns-server 8.8.8.8", "desc": "DNS" },
-          { "cmd": "exit", "desc": "Exit" }
-        ]
-      },
-      {
-        "group_title": "Exclude",
-        "commands": [
-          {
-            "cmd": "ip dhcp excluded-address 192.168.1.1 192.168.1.20",
-            "desc": "Reserve static IPs"
-          }
-        ]
-      },
-      {
-        "group_title": "Relay",
+        "group_title": {
+          "en": "DHCP Relay",
+          "ar": "مُرحل DHCP"
+        },
         "commands": [
           {
             "cmd": "ip helper-address {server-ip}",
-            "desc": "DHCP relay"
+            "desc": {
+              "en": "DHCP relay",
+              "ar": "ترحيل DHCP"
+            }
           }
         ]
       }
     ]
   },
-
   {
-    "title_key": "Notes",
+    "title": {
+      "en": "Routing",
+      "ar": "التوجيه"
+    },
+    "icon_name": "radar",
+    "groups": [
+      {
+        "group_title": {
+          "en": "Static",
+          "ar": "ثابت"
+        },
+        "commands": [
+          {
+            "cmd": "ip route X X X",
+            "desc": {
+              "en": "Static route",
+              "ar": "مسار ثابت"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "RIP",
+          "ar": "RIP"
+        },
+        "commands": [
+          {
+            "cmd": "router rip",
+            "desc": {
+              "en": "Enable RIP",
+              "ar": "تفعيل RIP"
+            }
+          },
+          {
+            "cmd": "version 2",
+            "desc": {
+              "en": "RIP v2",
+              "ar": "RIP الإصدار 2"
+            }
+          },
+          {
+            "cmd": "no auto-summary",
+            "desc": {
+              "en": "Disable summary",
+              "ar": "إلغاء التلخيص"
+            }
+          },
+          {
+            "cmd": "network X",
+            "desc": {
+              "en": "Add network",
+              "ar": "إضافة شبكة"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "EtherChannel (LACP)",
+      "ar": "الإيثر تشانيل (LACP)"
+    },
+    "icon_name": "link",
+    "groups": [
+      {
+        "group_title": {
+          "en": "Prep",
+          "ar": "التحضير"
+        },
+        "commands": [
+          {
+            "cmd": "interface range fa0/1-8",
+            "desc": {
+              "en": "Select ports",
+              "ar": "اختيار المنافذ"
+            }
+          },
+          {
+            "cmd": "switchport mode trunk",
+            "desc": {
+              "en": "Trunk mode",
+              "ar": "وضع Trunk"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Create LACP",
+          "ar": "إنشاء LACP"
+        },
+        "commands": [
+          {
+            "cmd": "channel-group 1 mode active",
+            "desc": {
+              "en": "LACP active",
+              "ar": "وضع Active لـ LACP"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Port-Channel",
+          "ar": "قناة المنافذ"
+        },
+        "commands": [
+          {
+            "cmd": "interface port-channel 1",
+            "desc": {
+              "en": "Port-channel",
+              "ar": "قناة المنافذ"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Port-Security",
+      "ar": "أمان المنافذ"
+    },
+    "icon_name": "shield",
+    "groups": [
+      {
+        "group_title": {
+          "en": "Setup",
+          "ar": "الإعداد"
+        },
+        "commands": [
+          {
+            "cmd": "switchport mode access",
+            "desc": {
+              "en": "Access",
+              "ar": "وضع Access"
+            }
+          },
+          {
+            "cmd": "switchport port-security",
+            "desc": {
+              "en": "Enable",
+              "ar": "تفعيل"
+            }
+          },
+          {
+            "cmd": "switchport port-security mac-address sticky",
+            "desc": {
+              "en": "Sticky MAC",
+              "ar": "عنوان MAC لاصق"
+            }
+          },
+          {
+            "cmd": "switchport port-security maximum 1",
+            "desc": {
+              "en": "1 MAC",
+              "ar": "عنوان MAC واحد"
+            }
+          },
+          {
+            "cmd": "switchport port-security violation shutdown",
+            "desc": {
+              "en": "Shutdown",
+              "ar": "إيقاف"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Violations",
+          "ar": "وضعيات المخالفات"
+        },
+        "commands": [
+          {
+            "cmd": "switchport port-security violation protect",
+            "desc": {
+              "en": "Protect mode",
+              "ar": "وضع الحماية"
+            }
+          },
+          {
+            "cmd": "switchport port-security violation restrict",
+            "desc": {
+              "en": "Restrict mode",
+              "ar": "وضع التقييد"
+            }
+          },
+          {
+            "cmd": "switchport port-security violation shutdown",
+            "desc": {
+              "en": "Shutdown",
+              "ar": "إيقاف"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "VTP",
+      "ar": "VTP"
+    },
+    "icon_name": "network",
+    "groups": [
+      {
+        "group_title": {
+          "en": "Server",
+          "ar": "الخادم"
+        },
+        "commands": [
+          {
+            "cmd": "vtp mode server",
+            "desc": {
+              "en": "VTP server mode",
+              "ar": "وضع الخادم"
+            }
+          },
+          {
+            "cmd": "vtp domain my-domain",
+            "desc": {
+              "en": "Set domain",
+              "ar": "تعيين النطاق"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Client",
+          "ar": "العميل"
+        },
+        "commands": [
+          {
+            "cmd": "vtp mode client",
+            "desc": {
+              "en": "VTP client mode",
+              "ar": "وضع العميل"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Transparent",
+          "ar": "الوضع الشفاف"
+        },
+        "commands": [
+          {
+            "cmd": "vtp mode transparent",
+            "desc": {
+              "en": "Transparent mode",
+              "ar": "الوضع الشفاف"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "DHCP",
+      "ar": "DHCP"
+    },
+    "icon_name": "router",
+    "groups": [
+      {
+        "group_title": {
+          "en": "Pool",
+          "ar": "الحوض"
+        },
+        "commands": [
+          {
+            "cmd": "ip dhcp pool LAN",
+            "desc": {
+              "en": "Create pool",
+              "ar": "إنشاء حوض DHCP"
+            }
+          },
+          {
+            "cmd": "network 192.168.1.0 255.255.255.0",
+            "desc": {
+              "en": "Pool network",
+              "ar": "شبكة الحوض"
+            }
+          },
+          {
+            "cmd": "default-router 192.168.1.1",
+            "desc": {
+              "en": "Default gateway",
+              "ar": "البوابة الافتراضية"
+            }
+          },
+          {
+            "cmd": "dns-server 8.8.8.8",
+            "desc": {
+              "en": "DNS",
+              "ar": "خادم DNS"
+            }
+          },
+          {
+            "cmd": "exit",
+            "desc": {
+              "en": "Exit",
+              "ar": "خروج"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Exclude",
+          "ar": "استثناء"
+        },
+        "commands": [
+          {
+            "cmd": "ip dhcp excluded-address 192.168.1.1 192.168.1.20",
+            "desc": {
+              "en": "Reserve static IPs",
+              "ar": "استثناء عناوين ثابتة"
+            }
+          }
+        ]
+      },
+      {
+        "group_title": {
+          "en": "Relay",
+          "ar": "ترحيل"
+        },
+        "commands": [
+          {
+            "cmd": "ip helper-address {server-ip}",
+            "desc": {
+              "en": "DHCP relay",
+              "ar": "ترحيل DHCP"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "title": {
+      "en": "Notes",
+      "ar": "ملاحظات"
+    },
     "icon_name": "info",
     "groups": [
       {
-        "group_title": "General",
+        "group_title": {
+          "en": "General",
+          "ar": "عام"
+        },
         "commands": [
-          { "cmd": "shutdown unused interfaces", "desc": "Disable unused ports" },
-          { "cmd": "SSH requires VLAN IP", "desc": "Set IP for remote access" },
-          { "cmd": "Router subinterfaces only", "desc": "No IP on main interface" },
-          { "cmd": "Reserve static IPs", "desc": "Keep IPs for server & SSH" }
+          {
+            "cmd": "shutdown unused interfaces",
+            "desc": {
+              "en": "Disable unused ports",
+              "ar": "إيقاف المنافذ غير المستخدمة"
+            }
+          },
+          {
+            "cmd": "SSH requires VLAN IP",
+            "desc": {
+              "en": "Set IP for remote access",
+              "ar": "SSH يحتاج عنوان IP للـ VLAN"
+            }
+          },
+          {
+            "cmd": "Router subinterfaces only",
+            "desc": {
+              "en": "No IP on main interface",
+              "ar": "الموجه يستخدم الواجهات الفرعية فقط"
+            }
+          },
+          {
+            "cmd": "Reserve static IPs",
+            "desc": {
+              "en": "Keep IPs for server & SSH",
+              "ar": "احتفظ بعناوين للسيرفر و SSH"
+            }
+          }
         ]
       }
     ]

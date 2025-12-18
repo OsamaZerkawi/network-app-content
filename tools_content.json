@@ -1,45 +1,86 @@
 [
   {
-    "name_key": "Download Cisco Packet Tracer",
-    "description_key": "Network simulation tool",
+    "name": {
+      "en": "Download Cisco Packet Tracer",
+      "ar": "تحميل Cisco Packet Tracer"
+    },
+    "description": {
+      "en": "Network simulation tool",
+      "ar": "أداة محاكاة الشبكات"
+    },
     "url": "https://www.netacad.com/articles/news/download-cisco-packet-tracer",
     "icon_name": "network"
   },
   {
-    "name_key": "Cisco Packet Tracer Course",
-    "description_key": "Cisco course on YouTube",
+    "name": {
+      "en": "Cisco Packet Tracer Course",
+      "ar": "دورة Cisco Packet Tracer"
+    },
+    "description": {
+      "en": "Cisco course on YouTube",
+      "ar": "دورة سيسكو على يوتيوب"
+    },
     "url": "https://www.youtube.com/watch?v=JplWfxhCE18&list=PLsPzjrOLeh_x-7-Yu0Yyc4Y7uJvpNJegL",
     "icon_name": "video"
   },
   {
-    "name_key": "English Networking Course",
-    "description_key": "Networking full course on YouTube",
+    "name": {
+      "en": "English Networking Course",
+      "ar": "دورة الشبكات باللغة الإنجليزية"
+    },
+    "description": {
+      "en": "Networking full course on YouTube",
+      "ar": "دورة الشبكات الكاملة على يوتيوب"
+    },
     "url": "https://www.youtube.com/watch?v=VwN91x5i25g&list=PLBlnK6fEyqRgMCUAG0XRw78UA8qnv6jEx",
     "icon_name": "video"
   },
   {
-    "name_key": "Wireshark",
-    "description_key": "Network protocol analyzer",
+    "name": {
+      "en": "Wireshark",
+      "ar": "وايرشارك"
+    },
+    "description": {
+      "en": "Network protocol analyzer",
+      "ar": "محلل بروتوكولات الشبكة"
+    },
     "url": "https://www.wireshark.org/",
     "icon_name": "eye"
   },
   {
-    "name_key": "Nmap",
-    "description_key": "Network scanner & security audit",
+    "name": {
+      "en": "Nmap",
+      "ar": "Nmap"
+    },
+    "description": {
+      "en": "Network scanner & security audit",
+      "ar": "ماسح الشبكة وتدقيق الأمان"
+    },
     "url": "https://nmap.org/",
     "icon_name": "radar"
   },
   {
-    "name_key": "Subnet Calculator",
-    "description_key": "Quick IP subnet calculator",
+    "name": {
+      "en": "Subnet Calculator",
+      "ar": "حاسبة الشبكات الفرعية"
+    },
+    "description": {
+      "en": "Quick IP subnet calculator",
+      "ar": "حاسبة سريعة للشبكات الفرعية"
+    },
     "url": "https://www.calculator.net/ip-subnet-calculator.html",
     "icon_name": "calculator"
   },
   {
-    "name_key": "Networks Calc",
-    "description_key": "This Applicaiton",
+    "name": {
+      "en": "Networks Calc",
+      "ar": "حاسبة الشبكات"
+    },
+    "description": {
+      "en": "This Application",
+      "ar": "هذا التطبيق"
+    },
     "url": "https://t.me/NetworksCalc",
     "icon_name": "calculator"
   }
- 
 ]
